@@ -1,34 +1,34 @@
 <template>
 <v-container>
-   <img id="logo" class="itemheader" src="@/assets/tasa-de-cafe.png">
-   <div class=topright>No tienes cuenta?
-      <v-btn rounded outlined><b>Registrate</b>
+   <img id="logo" class="itemheader" src="@/assets/img/logo.png">
+   <div class=topright>Dont have an account?
+      <v-btn rounded outlined><b>Sign Up</b>
       </v-btn>
    </div>
    <v-layout >
       <v-flex>
          <div class=centered>
-            <h1>Bienvenido</h1>
+            <h1>Welcome</h1>
             <v-text-field
-               type="password"
-               label="Correo Electronico"
+               type=""
+               label="Email"
                rounded
                single-line
                outlined></v-text-field>
             <v-text-field
                type="password"
-               label="Contraseña"
+               label="Password"
                rounded
                single-line
                outlined
                class="shrink">
             </v-text-field>
                <v-col align="center" justify="space-around">
-                  <v-btn id="logbtn" rounded color="#fff176"><b>Ingresar</b></v-btn>
+                  <v-btn id="logbtn" rounded color="#fff176"><b>Login</b></v-btn>
                </v-col>
                <div class="test">
                   <hr class="solid">
-                  Ingresar con
+                  Login with
                </div>
                <div>
                   <v-col align="center">
@@ -37,27 +37,9 @@
                         rounded
                         outlined
                      >
-                        <img src="@/assets/twitter.png">
-                        Ingresar con Twitter
-                        </v-btn>
-                     </div>
-                     <div>
-                        <v-btn id="SocialMediabtn"
-                        rounded
-                        outlined
-                        >
-                        <img src="@/assets/facebook.png">
-                        Ingresar con Facebook
-                        </v-btn>
-                     </div>
-                     <div>
-                        <v-btn id="SocialMediabtn"
-                        rounded
-                        outlined
-                        >
-                        <img src="@/assets/google.png">
-                        Ingresar con Google
-                        </v-btn>
+                        <img src="@/assets/img/metamask.png">
+                        Login with Metamask
+                        </v-btn>                  
                      </div>
                   </v-col>
                </div>

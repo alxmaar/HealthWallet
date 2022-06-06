@@ -59,19 +59,19 @@ name: "sidebar",
       {
         title: "Dashboard",
         icon: "mdi-view-dashboard",
-        to: "/pages/profiled"
+        to: "/pages/Dashboard"
       },
 
       {
         title: "Paciente",
         icon: "mdi-glass-flute",
-        to: "/pages/profile"
+        to: "/pages/Profile"
       },
 
       {
         title: "Doctor",
         icon: "mdi-alert",
-        to: "/pages/alerts"
+        to: "/pages/ProfileD"
       },
     ]
   })

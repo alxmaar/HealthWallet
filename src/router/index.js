@@ -8,23 +8,18 @@ export default new Router({
   base: process.env.BASE_URL,
   routes: [
     {
-      path: '/login',
-      name: 'login',
-      component: login
-    },
-    {
-      path: '/',
+      path: '/dashboard',
       redirect: '/dashboard',
       component: () => import('@/layouts/Layout'),
       children: [
         {
           name: 'Alerts',
-          path: 'pages/alerts',
+          path: 'dashboard/alerts',
           component: () => import('@/views/pages/ProfileD')
         },
         {
           name: 'Profile',
-          path: 'pages/profile',
+          path: 'dashboard/profile',
           component: () => import('@/views/pages/Profile')
         },
         {
@@ -33,6 +28,17 @@ export default new Router({
           component: () => import('@/views/Dashboard')
         }
       ]
-    }
+    },
+    {
+      path: '/',
+      name: 'landing',
+      component: () => import('@/views/landing')
+    },
+    {
+      path: '/login',
+      name: 'login',
+      component: login
+    },
+    
   ]
 })

@@ -25,7 +25,7 @@ export default new Router({
         {
           name: 'Dashboard',
           path: '/dashboard',
-          component: () => import('@/views/Dashboard')
+          component: () => import('@/views/pages/Medical')
         }
       ]
     },

@@ -56,10 +56,14 @@ name: "sidebar",
   },
   data: () => ({
     items: [
-      
+      {
+        title: "Medical Record",
+        icon: "mdi-glass-flute",
+        to: "/dashboard"
+      },
 
       {
-        title: "Paciente",
+        title: "Patient",
         icon: "mdi-glass-flute",
         to: "/dashboard/pages/profile"
       },

@@ -59,7 +59,7 @@ name: "sidebar",
       {
         title: "Dashboard",
         icon: "mdi-view-dashboard",
-        to: "/pages/Dashboard"
+        to: "/Dashboard"
       },
 
       {

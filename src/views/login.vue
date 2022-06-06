@@ -1,6 +1,6 @@
 <template>
 <v-container>
-   <img id="logo" class="itemheader" src="@/assets/img/logo.png">
+   <img id="logo" class="itemheader" :src="require('@/assets/img/logo.png')">
    <div class=topright>Dont have an account?
       <v-btn rounded outlined><b>Sign Up</b>
       </v-btn>

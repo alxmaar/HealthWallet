@@ -14,13 +14,25 @@ export default new Router({
       children: [
         {
           name: 'Alerts',
-          path: 'dashboard/alerts',
+          path: '/dashboard/pages/alerts',
           component: () => import('@/views/pages/ProfileD')
         },
         {
           name: 'Profile',
-          path: 'dashboard/profile',
+          path: '/dashboard/pages/profile',
           component: () => import('@/views/pages/Profile')
+        },
+        {
+          name: 'Icons',
+          path: 'pages/icons'
+        },
+        {
+          name: 'TableSimple',
+          path: 'pages/tables-simple'
+        },
+         {
+          name: 'Corte',
+          path: 'pages/Corte'
         },
         {
           name: 'Dashboard',
@@ -30,15 +42,14 @@ export default new Router({
       ]
     },
     {
-      path: '/',
-      name: 'landing',
-      component: () => import('@/views/landing')
-    },
-    {
       path: '/login',
       name: 'login',
       component: login
     },
-    
+    {
+      path: '/',
+      name: 'Landing',
+      component: () => import('@/views/Landing')
+    }
   ]
 })

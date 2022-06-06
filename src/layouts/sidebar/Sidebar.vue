@@ -65,13 +65,13 @@ name: "sidebar",
       {
         title: "Paciente",
         icon: "mdi-glass-flute",
-        to: "/pages/Profile"
+        to: "/dashboard/pages/profile"
       },
 
       {
         title: "Doctor",
         icon: "mdi-alert",
-        to: "/pages/ProfileD"
+        to: "/dashboard/pages/alerts"
       },
     ]
   })

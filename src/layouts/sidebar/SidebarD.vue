@@ -20,7 +20,7 @@
 
         <v-list-item-content>
           <v-list-item-title>Jorge Ibarra </v-list-item-title>
-          <v-list-item-subtitle class="caption">Paciente</v-list-item-subtitle>
+          <v-list-item-subtitle class="caption">Doctor</v-list-item-subtitle>
         </v-list-item-content>
       </v-list-item>
       <!---USer Area -->
@@ -56,19 +56,17 @@ name: "sidebar",
   },
   data: () => ({
     items: [
-      
+      {
+        title: "Perfil",
+        icon: "mdi-account-box-multiple",
+        to: "/Doctor/profile"
+      },
 
       {
         title: "Paciente",
-        icon: "mdi-glass-flute",
-        to: "/dashboard/pages/profile"
-      },
-
-      {
-        title: "Doctor",
-        icon: "mdi-alert",
-        to: "/dashboard/pages/alerts"
-      },
+        icon: "mdi-account-eye",
+        to: "/Doctor"
+      }
     ]
   })
 }

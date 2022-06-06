@@ -23,21 +23,31 @@ export default new Router({
           component: () => import('@/views/pages/Profile')
         },
         {
-          name: 'Icons',
-          path: 'pages/icons'
-        },
-        {
-          name: 'TableSimple',
-          path: 'pages/tables-simple'
-        },
-         {
-          name: 'Corte',
-          path: 'pages/Corte'
-        },
-        {
           name: 'Dashboard',
           path: '/dashboard',
           component: () => import('@/views/Dashboard')
+        }
+      ]
+    },
+    {
+      path: '/Doctor ',
+      redirect: '/Doctor',
+      component: () => import('@/layouts/LayoutD'),
+      children: [
+        {
+          name: 'Alerts',
+          path: '/Doctor/Tabla',
+          component: () => import('@/views/Doctor/Consulta')
+        },
+        {
+          name: 'Profile',
+          path: '/Doctor/profile',
+          component: () => import('@/views/Doctor/PerfilDoctor')
+        },
+        {
+          name: 'Dashboard',
+          path: '/Doctor',
+          component: () => import('@/views/Doctor/BuscarPaciente')
         }
       ]
     },
